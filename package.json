@@ -1,0 +1,40 @@
+{
+  "name": "dataworld-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for data.world — search, query, and download public datasets from Claude Code",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "dataworld-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --experimental-test-module-mocks --test test/client.test.js",
+    "test:e2e": "node --test test/e2e.test.js",
+    "lint": "npx eslint src/"
+  },
+  "keywords": [
+    "mcp",
+    "data.world",
+    "datasets",
+    "claude-code",
+    "model-context-protocol",
+    "open-data",
+    "tableau",
+    "analytics"
+  ],
+  "author": "Anthony Hipp <DrakkoTarkin>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DrakkoTarkin/dataworld-mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.13.6"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
