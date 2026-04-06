@@ -5,7 +5,8 @@
   "type": "module",
   "main": "src/index.js",
   "bin": {
-    "dataworld-mcp": "src/index.js"
+    "dataworld-mcp": "src/index.js",
+    "dw": "src/cli.js"
   },
   "scripts": {
     "start": "node src/index.js",
